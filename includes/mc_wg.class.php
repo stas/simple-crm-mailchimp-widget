@@ -121,7 +121,7 @@ class MC_WG extends WP_Widget {
                         false,
                         true,
                         true,
-                        false
+                        true // Send welcome
                     );
                 }
                 
