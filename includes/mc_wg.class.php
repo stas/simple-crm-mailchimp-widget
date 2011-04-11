@@ -126,7 +126,7 @@ class MC_WG extends WP_Widget {
                 }
                 
                 // Send a notice
-                $same_url = get_site_url() . $_SERVER["PHP_SELF"];
+                $same_url = get_site_url() . $_POST["_wp_http_referer"];
                 if( $response )
                     wp_redirect( add_query_arg( array( 'subscription' => 'success' ), $same_url ) );
                 else
